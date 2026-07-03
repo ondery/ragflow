@@ -162,6 +162,7 @@ class Graph:
 
     def close(self):
         from common.mcp_tool_call_conn import MCPToolCallSession
+
         seen = set()
         for cpn in self.components.values():
             obj = cpn.get("obj")
